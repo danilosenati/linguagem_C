@@ -5,13 +5,13 @@
 #include <malloc.h>
 #include <stdio.h>
 
-// Declaraão da estrutura Nodo
+// Declaração da estrutura Nodo
 typedef struct sNodo {
   int info;
   struct sNodo *prox;
 } Nodo;
 
-// Declaraão da estrutura Lista simples encadeada
+// Declaração da estrutura Lista simples encadeada
 typedef struct sLista {
   Nodo *inicio;
 } Lista;
@@ -165,7 +165,7 @@ int listaVazia(Lista *pList) {
         printf("4 - Remover elemento de uma posição da lista\n");
         printf("5 - Imprimir lista\n");
         printf("6 - Apagar todos os elementos da lista\n");
-        printf("7 - Alterar elemento da lista");
+        printf("7 - Alterar elemento da lista\n");
         printf("0 - Sair\n\n");
         printf("Opcao: ");
         scanf( "%d", &opcao);
@@ -174,7 +174,7 @@ int listaVazia(Lista *pList) {
           case 1:
             printf("Digite o valor a ser inserido: ");
             scanf("%d", &valor);
-            insereInicio(&minhaLista, valor);
+              inserirInicio(&minhaLista, valor);
             break;
           
           case 2:
@@ -198,7 +198,7 @@ int listaVazia(Lista *pList) {
               printf("Lista vazia \n");
             
             } else {
-              imprimirLista(&minhaLista);
+              mostrarLista(&minhaLista);
             }
             break;
 
