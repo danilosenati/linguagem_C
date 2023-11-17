@@ -77,9 +77,53 @@ void inserirOrdenado(Lista *pList, int a) {
       pList->inicio = novo;
     }
   }else{
-    
+    printf("Memória insuficiente \n");
   }
 }
+
+  // Remover elemento especifico da lista
+  void removerElemento(Lista *pList, int a) {
+    Nodo *pAtual, *pAnterior;
+    pAnterior = NULL;
+    pAtual = pList->inicio;
+    
+    while (pAtual != NULL && pAtual->info != a) {
+      pAnterior = pAtual;
+      pAtual = pAtual->prox;
+    }
+    if (pAnterior != NULL) {
+      if(pAtual != NULL){
+        pAnterior->prox = pAtual->prox;
+        free(pAtual);
+        printf("Elemento removido \n");
+      }else{
+        printf("Elemento não encontrado \n"); 
+        }
+    }
+    else{
+      printf("Lista vazia \n");
+    }
+
+  // Remover todos os elementos da lista
+    void removerTodos(Lista *pList) {
+      Nodo *pAuxiliar = pList->inicio;
+      if(pAuxiliar != NULL){
+        while(pAuxiliar != NULL){
+          pList->inicio = pAuxiliar->prox;
+          free(pAuxiliar);
+          pAuxiliar = pList->inicio;
+        }
+        printf("Elementos Removidos\n");
+        }
+      else{
+        printf("Lista vazia\n");
+      }
+    }  
+    
+
+    
+  }
+  
   
   
 /* Início do corpo principal do programa */
