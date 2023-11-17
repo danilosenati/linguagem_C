@@ -5,8 +5,6 @@ Trabalho da Disciplina Estrutura de Dados (IL10301) [AVA 1]
 
 // Autor: Danilo Barros
 
-Update ava1_EstruturaDados.c
-
 #include <locale.h>
 #include <malloc.h>
 #include <stdio.h>
