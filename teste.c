@@ -5,8 +5,12 @@ if((*pRaiz) != NULL) {
  exibirPreOrdem(&(*pRaiz)->direita); }
 }
 
-
-
+void exibirEmOrdem(No **pRaiz) {
+if((*pRaiz) != NULL) {
+ exibirEmOrdem(&(*pRaiz)->esquerda);
+ printf(“%i\n”, (*pRaiz)->numero);
+ exibirEmOrdem(&(*pRaiz)->direita); }
+}
 
 void exibirPosOrdem(No **pRaiz) {
 if((*pRaiz) != NULL) {
