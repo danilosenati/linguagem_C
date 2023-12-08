@@ -17,7 +17,7 @@ int main(void) {
   letraA = letraB + letraC;
 
   printf("num1 = %d\n", num1 = num2 + num3);
-  printf("numeo1 = %.0f\n", numero1 = numero2 + numero3);
+  printf("numero1 = %.0f\n", numero1 = numero2 + numero3);
   printf("letraA = %c \n\n", letraA);
   
   // SUBTRAÇÃO
@@ -33,6 +33,14 @@ int main(void) {
 
   // MULTIPLICAÇÃO
   printf("####_MULTIPLICAÇÃO_####\n");
+  int x1, x2 = 9, x3 = 7;
+  double x4 = 7.4, x5 = 2;
+
+  x1 = x2 * x3;
+  double resultado = x4 * x5; 
+  
+  printf("%d x %d : %d\n", x2, x3, x1);
+ printf("%.1f x %.0f : %.2f\n\n",x4, x5, resultado);
   
   
   return 0;
