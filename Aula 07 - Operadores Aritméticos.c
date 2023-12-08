@@ -6,6 +6,8 @@
 int main(void) {
   
   //SOMA
+  printf("####_SOMA_####\n");
+  
   int num1, num2 = 2, num3 = 3;
   float numero1, numero2 = 2.5, numero3 = 3.5;
   char letraA, letraB = '0', letraC = 'C'; // Soma o valor zerona tabela ASCII e somar com o valor C da tabela ASCII.
@@ -16,7 +18,22 @@ int main(void) {
 
   printf("num1 = %d\n", num1 = num2 + num3);
   printf("numeo1 = %.0f\n", numero1 = numero2 + numero3);
-  printf("letraA = %c \n", letraA);
+  printf("letraA = %c \n\n", letraA);
+  
+  // SUBTRAÇÃO
+  printf("####_SUBTRAÇÃO_####\n");
+  int valor1, valor2 = 5, valor3 = 3;
+  float valor4, valor5 = 2.5;
+
+  valor1 = valor2 - valor3;
+  valor4 = -valor5;
+
+  printf("%d - %d : %d\n", valor2, valor3, valor1);
+  printf("valor4 = %.1f\n\n", valor4);
+
+  // MULTIPLICAÇÃO
+  printf("####_MULTIPLICAÇÃO_####\n");
+  
   
   return 0;
 }
