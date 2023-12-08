@@ -9,7 +9,7 @@ int main(void) {
   float real;
   double real2;
 
-    printf("Digite uma letra: \n");
+    printf("Digite apenas uma letra: \n");
     scanf("%c",&letra);
     printf("Digite um numero: \n");
     scanf("%d",&numero);
@@ -18,7 +18,7 @@ int main(void) {
     printf("Digite outro número com ponto flutuante: \n");
     scanf("%lf",&real2);
 
-    printf("Palavra digitada: %c, numero: %d, ponto flutuante: %.2f, segundo numero com ponto flutuante: %.2f", letra, numero, real, real2);
+    printf("A letra digitada: %c, numero: %d, ponto flutuante: %.2f, segundo numero com ponto flutuante: %.2f", letra, numero, real, real2);
 
   return 0;
 }
