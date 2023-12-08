@@ -10,7 +10,8 @@ int main(void) {
   int num1, num2 = 2, num3 = 3;
   float numero1, numero2 = 2.5, numero3 = 3.5;
   char letraA, letraB = '0',
-  letraC = 'C'; // Soma o valor zero na tabela ASCII com o valor C da tabela ASCII.
+               letraC = 'C'; // Soma o valor zerona tabela ASCII e somar com o
+                             // valor C da tabela ASCII.
 
   // num1 = num2 + num3;
   // numero1 = numero2 + numero3;
@@ -58,5 +59,23 @@ int main(void) {
   y5 = y2 / 2.0;
   printf("y5 = %.f\n\n", y5);
 
+  // PRECEDÊNCIA DE OPERADORES
+  printf("####_PRECEDÊNCIA_####\n");
+  float number1, number2 = 6.2;
+  number1 = number2 + 11 / 2.0;  //number1 = number4 + (11 / 2.0)
+  printf("number1 = %.1f \n",number1);
+
+  number1 = (number2 + 15) / 3.5;
+  printf("number1 = %.2f \n\n",number1);
+
+  // RESTO DA DIVISÃO
+  printf("####_RESTO_DA_DIVISÃO_####\n");
+  int number3 = 11, number4;
+  number4 = number3 % 2;
+  printf("number4 = %d\n", number4);
+
+  number4 = number3 % 0;
+  printf("number4 = %d\n", number4);
+  
   return 0;
 }
