@@ -1,17 +1,17 @@
 #include <stdio.h>
 
-
 // Aula 07 - Operadores Aritméticos
 
 int main(void) {
-  
-  //SOMA
+
+  // SOMA
   printf("####_SOMA_####\n");
-  
+
   int num1, num2 = 2, num3 = 3;
   float numero1, numero2 = 2.5, numero3 = 3.5;
-  char letraA, letraB = '0', letraC = 'C'; // Soma o valor zerona tabela ASCII e somar com o valor C da tabela ASCII.
-  
+  char letraA, letraB = '0',
+  letraC = 'C'; // Soma o valor zero na tabela ASCII com o valor C da tabela ASCII.
+
   // num1 = num2 + num3;
   // numero1 = numero2 + numero3;
   letraA = letraB + letraC;
@@ -19,7 +19,7 @@ int main(void) {
   printf("num1 = %d\n", num1 = num2 + num3);
   printf("numero1 = %.0f\n", numero1 = numero2 + numero3);
   printf("letraA = %c \n\n", letraA);
-  
+
   // SUBTRAÇÃO
   printf("####_SUBTRAÇÃO_####\n");
   int valor1, valor2 = 5, valor3 = 3;
@@ -37,11 +37,26 @@ int main(void) {
   double x4 = 7.4, x5 = 2;
 
   x1 = x2 * x3;
-  double resultado = x4 * x5; 
-  
+  double resultado = x4 * x5;
+
   printf("%d x %d : %d\n", x2, x3, x1);
- printf("%.1f x %.0f : %.2f\n\n",x4, x5, resultado);
-  
-  
+  printf("%.1f x %.0f : %.2f\n\n", x4, x5, resultado);
+
+  // DIVISÃO
+  printf("####_DIVISÃO_####\n");
+  int y2 = 10, y3;
+  float y4, y5;
+
+  // DIVISÃO COM NUMEROS INTEIROS
+  y3 = y2 / 2;
+  printf("y3 = %d\n", y3);
+
+  // DIVISÃO COM NUMEROS COM PONTO FLUTUANTE
+  y4 = y2 / 2;
+  printf("y4 = %f\n", y4);
+
+  y5 = y2 / 2.0;
+  printf("y5 = %.f\n\n", y5);
+
   return 0;
 }
