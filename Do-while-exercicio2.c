@@ -48,7 +48,7 @@ int main(void) {
        break;
 
      case 5:
-         votosBranco =+1;
+         votosBranco =+1; 
        break;
    }
 
